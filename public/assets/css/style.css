@@ -1,4 +1,7 @@
 @import url(bootstrap.min.css);
+@import url(mfg-icons.css);
+@import url(ionicons.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800|Titillium+Web:400,700,600,900,300,200|Passion+One:400,700,900&subset=latin,latin-ext);
 
 /*
@@ -14,7 +17,14 @@ font-family: 'Titillium Web', sans-serif;
 font-family: 'Passion One', cursive;
 
 */
+::selection {
+  background : #71ba51;
+}
+::-moz-selection {
+  background : #71ba51;
+}
 
+@charset "UTF-8";
 body {
 	font-family: 'Titillium Web', sans-serif;
     display: flex;
@@ -28,31 +38,49 @@ body {
     flex: 1 0 auto;
   }
 
+a {
+        color: #71ba51;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none !important;
+        text-shadow: none;
+    }
+
+    a:hover, a:focus{
+
+        color: #fff;
+        text-shadow: 0 0 4px #fff;
+    }
+
 .navbar {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
+	font-family: 'Raleway', cursive;
     margin-bottom: 0;
     background-color: #282830;
     z-index: 9999;
     border: 0;
-    font-size: 12px !important;
+    font-size: 20px !important;
     line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     border-radius: 0;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar li a, .navbar .navbar-brand {
     color: #71ba51 !important;
-    font-weight: 800;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    font-weight: 500;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.transnav {
+    background-color: transparent;
 }
 
 .navbar li a:hover, .navbar:hover .navbar-brand:hover {
@@ -95,11 +123,265 @@ body {
 
 .head-panel{
 
-	background-color: #282830;
-	font-family: 'Raleway', cursive;
-	font-size: 25px;
-	color: #fff;
-	height: 360px;
-	width: 100%;
-	padding: 60px 50px 50px 50px;
+    background-color: #282830;
+    font-family: 'Raleway', cursive;
+    font-size: 25px;
+    color: #fff;
+    height: 360px;
+    width: 100%;
+    padding: 60px 50px 50px 50px;
+}
+
+.login-body{
+
+    background: #282830 url(../img/login.jpg) no-repeat 0 0;
+    background: #222222 url(../img/login.jpg) no-repeat 0 0;
+    text-align: center;
+    background-size: cover;
+    font-family: 'Raleway', cursive;
+    font-size: 20px;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding-top: 150px;
+
+}
+
+.talebe-box:hover{
+
+        color: #282830;
+        text-shadow: 0 0 4px #282830;
+        -webkit-box-shadow: inset 0px 0px 118px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 118px 0px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 118px 0px rgba(0,0,0,0.75);
+}
+
+/* OTHER ELEMENTS */
+
+.specrobar {
+  height: 3px;
+  border-top: 0;
+  background: #222222;
+  border-radius: 2px;
+  background-image: -webkit-linear-gradient(left, #282830, #282830 12.5%, #71ba51 12.5%, #71ba51 25%, #282830 25%, #282830 37.5%, #71ba51 37.5%, #71ba51 50%, #282830 50%, #282830 62.5%, #71ba51 62.5%, #71ba51 75%, #282830 75%, #282830 87.5%, #71ba51 87.5%, #71ba51);
+  background-image: -moz-linear-gradient(left, #282830, #282830 12.5%, #71ba51 12.5%, #71ba51 25%, #282830 25%, #282830 37.5%, #71ba51 37.5%, #71ba51 50%, #282830 50%, #282830 62.5%, #71ba51 62.5%, #71ba51 75%, #282830 75%, #282830 87.5%, #71ba51 87.5%, #71ba51);
+  background-image: -o-linear-gradient(left, #282830, #282830 12.5%, #71ba51 12.5%, #71ba51 25%, #282830 25%, #282830 37.5%, #71ba51 37.5%, #71ba51 50%, #282830 50%, #282830 62.5%, #71ba51 62.5%, #71ba51 75%, #282830 75%, #282830 87.5%, #71ba51 87.5%, #71ba51);
+}
+
+hr{
+    border-color: #71ba51;
+}
+
+.tooltip {
+
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    
+    }
+
+.tooltip-inner {
+    color: #71ba51;
+}
+
+/* INPUT ELEMETS */
+
+.input-group-addon{
+    color: #71ba51;
+    background-color: #282830;
+    border: 1px solid #282830;
+
+}
+
+.form-control {
+    font-family: 'Titillium Web', sans-serif;
+    color: #71ba51;
+    background-color: #222222;
+    border: 1px solid #222222;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+.form-control:hover {
+    border-color: #71ba51;
+}
+
+.form-control:focus {
+    border-color: #71ba51;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(113, 186, 81, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(113, 186, 81, .6)
+}
+
+/* BUTTONS */
+
+.btn{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-specro-green {
+    color: #282830;
+    background-color: #71ba51;
+    border-color: #71ba51
+}
+
+.btn-specro-green:hover {
+    color: #71ba51;
+    background-color: #282830;
+    border-color: #282830;
+}
+
+.btn-specro-green:focus,.btn-specro-green.active {
+    color: #fff;
+    background-color: #222222;
+    border-color: #222222
+}
+
+
+
+/* FOOTER */
+
+footer{
+    display: block;;
+    font-family: 'Titillium Web', sans-serif;
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+    background-color: #282830;
+    color: #fff;
+    font-size: 15px;
+}
+
+.foot{
+    opacity: 0.2;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 100px;
+    height: 40px;
+    background: url(../img/logo2.svg);
+    background-size: 100px 40px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.foot:hover{
+    opacity: 1;
+}
+
+/* FOOTER SOCIAL */
+
+div.social {
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  margin-top: -17px;
+  text-shadow: none;
+  padding-top: 25px;
+}
+
+div.social a {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 5px;
+  font-family: "fontawesome";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color .2s linear, color .2s linear;
+}
+div.social a:before {
+  width: inherit;
+  height: inherit;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+div.social a.icon-twitter {
+  background-color: #00acee;
+}
+div.social a.icon-twitter:before {
+  content: "\f099";
+}
+div.social a.icon-twitter:hover {
+  background-color: #fff;
+  color: #00acee;
+}
+div.social a.icon-facebook {
+  background-color: #3b5998;
+}
+div.social a.icon-facebook:before {
+  content: "\f09a";
+}
+div.social a.icon-facebook:hover {
+  background-color: #fff;
+  color: #3b5998;
+}
+div.social a.icon-instagram {
+  background-color: #3f729b;
+}
+div.social a.icon-instagram:before {
+  content: "\f16d";
+}
+div.social a.icon-instagram:hover {
+  background-color: #fff;
+  color: #3f729b;
+}
+div.social a.icon-soundcloud {
+  background-color: #ff7700;
+}
+div.social a.icon-soundcloud:before {
+  content: "\f1be";
+}
+div.social a.icon-soundcloud:hover {
+  background-color: #fff;
+  color: #ff7700;
+}
+div.social a.icon-youtube {
+  background-color: #c4302b;
+}
+div.social a.icon-youtube:before {
+  content: "\f16a";
+}
+div.social a.icon-youtube:hover {
+  background-color: #fff;
+  color: #c4302b;
+}
+div.social a.icon-vimeo {
+  background-color: #43baff;
+}
+div.social a.icon-vimeo:before {
+  content: "\f27d";
+}
+div.social a.icon-vimeo:hover {
+  background-color: #fff;
+  color: #43baff;
+}
+div.social a.icon-dribbble {
+  background-color: #ea4c89;
+}
+div.social a.icon-dribbble:before {
+  content: "\f17d";
+}
+div.social a.icon-dribbble:hover {
+  background-color: #fff;
+  color: #ea4c89;
+}
+
+div.social a.icon-gplus {
+  background-color: #dd4b39;
+}
+div.social a.icon-gplus:before {
+  content: "\f0d5";
+}
+div.social a.icon-gplus:hover {
+  background-color: #fff;
+  color: #dd4b39;
 }
