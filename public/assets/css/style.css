@@ -1,0 +1,105 @@
+@import url(bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800|Titillium+Web:400,700,600,900,300,200|Passion+One:400,700,900&subset=latin,latin-ext);
+
+/*
+
+specrolla style file
+koalapix.
+
+#282830 - dark
+#71ba51 - green
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Passion One', cursive;
+
+*/
+
+body {
+	font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #eee;
+    color: #282830;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+.navbar {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+    margin-bottom: 0;
+    background-color: #282830;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-radius: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #71ba51 !important;
+    font-weight: 800;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.navbar li a:hover, .navbar:hover .navbar-brand:hover {
+    color: #fff !important;
+    text-shadow: 0 0 5px #fff;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #fff !important;
+    text-shadow: 0 0 5px #fff;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.no-letter-spacing{
+	letter-spacing: 0;
+}
+
+.loga{
+	display: block;
+    text-indent: -9999px;
+    width: 120px;
+    height: 55px;
+    background: url(../img/logo.svg);
+    background-size: 120px 55px;
+}
+
+.loga:hover, .loga:focus{
+	display: block;
+    text-indent: -9999px;
+    width: 120px;
+    height: 55px;
+    background: url(../img/logo2.svg);
+    background-size: 120px 55px;
+}
+/* HEADER BANNER*/
+
+.head-panel{
+
+	background-color: #282830;
+	font-family: 'Raleway', cursive;
+	font-size: 25px;
+	color: #fff;
+	height: 360px;
+	width: 100%;
+	padding: 60px 50px 50px 50px;
+}
