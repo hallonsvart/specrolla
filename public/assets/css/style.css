@@ -45,14 +45,14 @@ a {
         -o-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         text-decoration: none !important;
-        text-shadow: none;
     }
 
     a:hover, a:focus{
 
         color: #fff;
-        text-shadow: 0 0 4px #fff;
     }
+
+
 
 .navbar {
 	font-family: 'Raleway', cursive;
@@ -85,18 +85,45 @@ a {
 
 .navbar li a:hover, .navbar:hover .navbar-brand:hover {
     color: #fff !important;
-    text-shadow: 0 0 5px #fff;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #fff !important;
-    text-shadow: 0 0 5px #fff;
 }
 
 .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
 }
+
+.open .dropdown-toggle {
+    color: #222222 ;
+    background-color: #222222 !important;
+}
+
+.dropdown-menu {
+    background-color: #282830 !important;
+}
+
+.dropdown-menu li a {
+    color: #71ba51 !important;
+    background-color: #282830 !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #71ba51 !important;
+    color: #282830 !important;
+}
+
+.dropdown-menu li a:focus {
+    background-color: #71ba51 !important;
+    color: #282830 !important;
+}
+
+.divider {
+  background-color: #71ba51 !important;
+}
+
 
 .no-letter-spacing{
 	letter-spacing: 0;
@@ -123,7 +150,8 @@ a {
 
 .head-panel{
 
-    background-color: #282830;
+    background: #282830 url(../img/login.jpg) no-repeat 0 0;
+    background-size: cover;
     font-family: 'Raleway', cursive;
     font-size: 25px;
     color: #fff;
@@ -135,7 +163,6 @@ a {
 .login-body{
 
     background: #282830 url(../img/login.jpg) no-repeat 0 0;
-    background: #222222 url(../img/login.jpg) no-repeat 0 0;
     text-align: center;
     background-size: cover;
     font-family: 'Raleway', cursive;
@@ -163,9 +190,9 @@ a {
   border-top: 0;
   background: #222222;
   border-radius: 2px;
-  background-image: -webkit-linear-gradient(left, #282830, #282830 12.5%, #71ba51 12.5%, #71ba51 25%, #282830 25%, #282830 37.5%, #71ba51 37.5%, #71ba51 50%, #282830 50%, #282830 62.5%, #71ba51 62.5%, #71ba51 75%, #282830 75%, #282830 87.5%, #71ba51 87.5%, #71ba51);
-  background-image: -moz-linear-gradient(left, #282830, #282830 12.5%, #71ba51 12.5%, #71ba51 25%, #282830 25%, #282830 37.5%, #71ba51 37.5%, #71ba51 50%, #282830 50%, #282830 62.5%, #71ba51 62.5%, #71ba51 75%, #282830 75%, #282830 87.5%, #71ba51 87.5%, #71ba51);
-  background-image: -o-linear-gradient(left, #282830, #282830 12.5%, #71ba51 12.5%, #71ba51 25%, #282830 25%, #282830 37.5%, #71ba51 37.5%, #71ba51 50%, #282830 50%, #282830 62.5%, #71ba51 62.5%, #71ba51 75%, #282830 75%, #282830 87.5%, #71ba51 87.5%, #71ba51);
+  background-image: -webkit-linear-gradient(left, #222222, #222222 12.5%, #71ba51 12.5%, #71ba51 25%, #222222 25%, #222222 37.5%, #71ba51 37.5%, #71ba51 50%, #222222 50%, #222222 62.5%, #71ba51 62.5%, #71ba51 75%, #222222 75%, #222222 87.5%, #71ba51 87.5%, #71ba51);
+  background-image: -moz-linear-gradient(left, #222222, #222222 12.5%, #71ba51 12.5%, #71ba51 25%, #222222 25%, #222222 37.5%, #71ba51 37.5%, #71ba51 50%, #222222 50%, #222222 62.5%, #71ba51 62.5%, #71ba51 75%, #222222 75%, #222222 87.5%, #71ba51 87.5%, #71ba51);
+  background-image: -o-linear-gradient(left, #222222, #222222 12.5%, #71ba51 12.5%, #71ba51 25%, #222222 25%, #222222 37.5%, #71ba51 37.5%, #71ba51 50%, #222222 50%, #222222 62.5%, #71ba51 62.5%, #71ba51 75%, #222222 75%, #222222 87.5%, #71ba51 87.5%, #71ba51);
 }
 
 hr{
@@ -180,6 +207,38 @@ hr{
 
 .tooltip-inner {
     color: #71ba51;
+}
+
+.badge {
+
+  color: #282830;
+  background-color: #71ba51;
+
+}
+
+.dropdown-toggle .badge {
+
+  color: #fff;
+  background-color: #ec1c24;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.dropdown-toggle:hover .badge {
+
+  color: #282830;
+  background-color: #fff;
+
+}
+
+.dropdown-toggle:hover .badge {
+
+  color: #282830;
+  background-color: #fff;
+
 }
 
 /* INPUT ELEMETS */
